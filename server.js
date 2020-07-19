@@ -29,7 +29,7 @@ var server = http.createServer(function(request, response){
          <link rel="stylesheet" href="/x">
        </head>
        <body>
-       <h1>标题</h1>
+       <h1>你好s</h1>
        </body>
       `)
     response.end()
