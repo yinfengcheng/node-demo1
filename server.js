@@ -29,7 +29,7 @@ var server = http.createServer(function(request, response){
          <link rel="stylesheet" href="/x">
        </head>
        <body>
-       <h1>你好s</h1>
+       <h1>你好</h1>
        </body>
       `)
     response.end()
@@ -37,7 +37,7 @@ var server = http.createServer(function(request, response){
   else if (path === '/x') {
     response.statusCode = 200
     response.setHeader('Content-Type', 'text/css;charset=utf-8')
-    response.write(`body{color: red;}`)
+    response.write(`h1{color: red;}`)
     response.end()
   } else {
     response.statusCode = 404
